@@ -13,9 +13,14 @@
 		9404C5752358EB76000FC40B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9404C5732358EB76000FC40B /* Main.storyboard */; };
 		9404C5772358EB77000FC40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9404C5762358EB77000FC40B /* Assets.xcassets */; };
 		9404C57A2358EB77000FC40B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9404C5782358EB77000FC40B /* LaunchScreen.storyboard */; };
+		9483FCC5235E1A200043FB86 /* String-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9483FCC4235E1A200043FB86 /* String-Helper.swift */; };
+		BE2875231FC4A3AD13488567 /* Pods_PimpMyTip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609C451D552F4FBE1DE2D285 /* Pods_PimpMyTip.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C76ECC895307F7D773445FF /* Pods-PimpMyTip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PimpMyTip.debug.xcconfig"; path = "Target Support Files/Pods-PimpMyTip/Pods-PimpMyTip.debug.xcconfig"; sourceTree = "<group>"; };
+		47B8095A560FA61C8BE2EF70 /* Pods-PimpMyTip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PimpMyTip.release.xcconfig"; path = "Target Support Files/Pods-PimpMyTip/Pods-PimpMyTip.release.xcconfig"; sourceTree = "<group>"; };
+		609C451D552F4FBE1DE2D285 /* Pods_PimpMyTip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PimpMyTip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9404C56A2358EB76000FC40B /* PimpMyTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PimpMyTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9404C56D2358EB76000FC40B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9404C56F2358EB76000FC40B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		9404C5762358EB77000FC40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9404C5792358EB77000FC40B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9404C57B2358EB77000FC40B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9483FCC4235E1A200043FB86 /* String-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2875231FC4A3AD13488567 /* Pods_PimpMyTip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BC4373EBFAD017D4BEA4B2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C76ECC895307F7D773445FF /* Pods-PimpMyTip.debug.xcconfig */,
+				47B8095A560FA61C8BE2EF70 /* Pods-PimpMyTip.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9404C5612358EB76000FC40B = {
 			isa = PBXGroup;
 			children = (
 				9404C56C2358EB76000FC40B /* PimpMyTip */,
 				9404C56B2358EB76000FC40B /* Products */,
+				6BC4373EBFAD017D4BEA4B2C /* Pods */,
+				F72AB788A491093BC83E4289 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +76,54 @@
 			children = (
 				9404C56D2358EB76000FC40B /* AppDelegate.swift */,
 				9404C56F2358EB76000FC40B /* SceneDelegate.swift */,
-				9404C5712358EB76000FC40B /* ViewController.swift */,
-				9404C5732358EB76000FC40B /* Main.storyboard */,
+				9483FCC2235E19D80043FB86 /* Model */,
+				9483FCC0235E19B70043FB86 /* Control */,
+				9483FCC1235E19C40043FB86 /* View */,
+				9483FCC3235E19F20043FB86 /* Extensions */,
 				9404C5762358EB77000FC40B /* Assets.xcassets */,
 				9404C5782358EB77000FC40B /* LaunchScreen.storyboard */,
 				9404C57B2358EB77000FC40B /* Info.plist */,
 			);
 			path = PimpMyTip;
+			sourceTree = "<group>";
+		};
+		9483FCC0235E19B70043FB86 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				9404C5712358EB76000FC40B /* ViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		9483FCC1235E19C40043FB86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9404C5732358EB76000FC40B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9483FCC2235E19D80043FB86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9483FCC3235E19F20043FB86 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9483FCC4235E1A200043FB86 /* String-Helper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F72AB788A491093BC83E4289 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				609C451D552F4FBE1DE2D285 /* Pods_PimpMyTip.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +133,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9404C57E2358EB77000FC40B /* Build configuration list for PBXNativeTarget "PimpMyTip" */;
 			buildPhases = (
+				1FE7A48F24FC209D9DFDE461 /* [CP] Check Pods Manifest.lock */,
 				9404C5662358EB76000FC40B /* Sources */,
 				9404C5672358EB76000FC40B /* Frameworks */,
 				9404C5682358EB76000FC40B /* Resources */,
@@ -133,6 +193,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FE7A48F24FC209D9DFDE461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PimpMyTip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9404C5662358EB76000FC40B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +225,7 @@
 			files = (
 				9404C5722358EB76000FC40B /* ViewController.swift in Sources */,
 				9404C56E2358EB76000FC40B /* AppDelegate.swift in Sources */,
+				9483FCC5235E1A200043FB86 /* String-Helper.swift in Sources */,
 				9404C5702358EB76000FC40B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +368,7 @@
 		};
 		9404C57F2358EB77000FC40B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C76ECC895307F7D773445FF /* Pods-PimpMyTip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +387,7 @@
 		};
 		9404C5802358EB77000FC40B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B8095A560FA61C8BE2EF70 /* Pods-PimpMyTip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
