@@ -14,6 +14,9 @@
 		9404C5772358EB77000FC40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9404C5762358EB77000FC40B /* Assets.xcassets */; };
 		9404C57A2358EB77000FC40B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9404C5782358EB77000FC40B /* LaunchScreen.storyboard */; };
 		9483FCC5235E1A200043FB86 /* String-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9483FCC4235E1A200043FB86 /* String-Helper.swift */; };
+		9483FCCC235E1D3F0043FB86 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483FCCB235E1D3F0043FB86 /* logo.png */; };
+		9483FCCE235E1D870043FB86 /* logo_transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483FCCD235E1D870043FB86 /* logo_transparent.png */; };
+		9483FCD0235E1DC80043FB86 /* favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483FCCF235E1DC80043FB86 /* favicon.png */; };
 		BE2875231FC4A3AD13488567 /* Pods_PimpMyTip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609C451D552F4FBE1DE2D285 /* Pods_PimpMyTip.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		9404C5792358EB77000FC40B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9404C57B2358EB77000FC40B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9483FCC4235E1A200043FB86 /* String-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Helper.swift"; sourceTree = "<group>"; };
+		9483FCCB235E1D3F0043FB86 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../../Desktop/logo.png; sourceTree = "<group>"; };
+		9483FCCD235E1D870043FB86 /* logo_transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_transparent.png; sourceTree = "<group>"; };
+		9483FCCF235E1DC80043FB86 /* favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favicon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		9404C56C2358EB76000FC40B /* PimpMyTip */ = {
 			isa = PBXGroup;
 			children = (
+				9483FCC8235E1C230043FB86 /* Images */,
 				9404C56D2358EB76000FC40B /* AppDelegate.swift */,
 				9404C56F2358EB76000FC40B /* SceneDelegate.swift */,
 				9483FCC2235E19D80043FB86 /* Model */,
@@ -116,6 +123,16 @@
 				9483FCC4235E1A200043FB86 /* String-Helper.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9483FCC8235E1C230043FB86 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9483FCCB235E1D3F0043FB86 /* logo.png */,
+				9483FCCD235E1D870043FB86 /* logo_transparent.png */,
+				9483FCCF235E1DC80043FB86 /* favicon.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		F72AB788A491093BC83E4289 /* Frameworks */ = {
@@ -185,6 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9483FCCC235E1D3F0043FB86 /* logo.png in Resources */,
+				9483FCCE235E1D870043FB86 /* logo_transparent.png in Resources */,
+				9483FCD0235E1DC80043FB86 /* favicon.png in Resources */,
 				9404C57A2358EB77000FC40B /* LaunchScreen.storyboard in Resources */,
 				9404C5772358EB77000FC40B /* Assets.xcassets in Resources */,
 				9404C5752358EB76000FC40B /* Main.storyboard in Resources */,

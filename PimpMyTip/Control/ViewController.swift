@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+
         handleTipChanges()
         
         billBeforeTip.delegate = self
@@ -74,13 +74,15 @@ class ViewController: UIViewController {
         
         let tipString: String = String(format: "$%.2f", tip)
         
+        
+        
         let totalWithTip: String = String(format: "$%.2f",tip + Float(theBillFloat))
         
         tipPercentageLabel.text = String(format: "%.2f", serviceSlider.value * 100.0)+"%"
         
-        billAfterTip.text = "Big Total: \(totalWithTip)"
+        billAfterTip.text = "Big Total: \(totalWithTip.currency)"
         
-        tipLabel.text = "Tip: \(tipString)"
+        tipLabel.text = "Tip: \(tipString.currency)"
         
         
     }
@@ -119,8 +121,9 @@ extension ViewController: UITextFieldDelegate {
         
             
             let text: NSString = (textField.text ?? "") as NSString
+                   
             let finalString = text.replacingCharacters(in: range, with: string)
-
+            
             // 'currency' is a String extension that doews all the number styling
             billBeforeTip.text = finalString.currency
 
