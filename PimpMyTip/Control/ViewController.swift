@@ -30,6 +30,26 @@ class ViewController: UIViewController {
         billBeforeTip.delegate = self
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+   
+        
+        guard let minValue = UserDefaults.standard.object(forKey: "minVal") as? Float else {
+            
+            return
+            
+        }
+        
+        guard let maxValue = UserDefaults.standard.object(forKey: "maxVal") as? Float else {
+            
+            return
+            
+        }
+        
+        serviceSlider.minimumValue = minValue
+        
+        serviceSlider.maximumValue = maxValue
+        
+    }
     
     @IBAction func serviceSliderWasUpdated(_ sender: Any) {
         
@@ -78,11 +98,11 @@ class ViewController: UIViewController {
         
         let totalWithTip: String = String(format: "$%.2f",tip + Float(theBillFloat))
         
-        tipPercentageLabel.text = String(format: "%.2f", serviceSlider.value * 100.0)+"%"
+        tipPercentageLabel.text = String(format: "%.2f%%", serviceSlider.value * 100.0)
         
-        billAfterTip.text = "Big Total: \(totalWithTip.currency)"
+        billAfterTip.text = "\(totalWithTip.currency)"
         
-        tipLabel.text = "Tip: \(tipString.currency)"
+        tipLabel.text = "\(tipString.currency)"
         
         
     }

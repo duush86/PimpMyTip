@@ -17,6 +17,8 @@
 		9483FCCC235E1D3F0043FB86 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483FCCB235E1D3F0043FB86 /* logo.png */; };
 		9483FCCE235E1D870043FB86 /* logo_transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483FCCD235E1D870043FB86 /* logo_transparent.png */; };
 		9483FCD0235E1DC80043FB86 /* favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483FCCF235E1DC80043FB86 /* favicon.png */; };
+		9483FCD2235E5C880043FB86 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9483FCD1235E5C880043FB86 /* splash.jpg */; };
+		94EFEB51235F893500F491B0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EFEB50235F893500F491B0 /* SettingsViewController.swift */; };
 		BE2875231FC4A3AD13488567 /* Pods_PimpMyTip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609C451D552F4FBE1DE2D285 /* Pods_PimpMyTip.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		9483FCCB235E1D3F0043FB86 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../../Desktop/logo.png; sourceTree = "<group>"; };
 		9483FCCD235E1D870043FB86 /* logo_transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_transparent.png; sourceTree = "<group>"; };
 		9483FCCF235E1DC80043FB86 /* favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favicon.png; sourceTree = "<group>"; };
+		9483FCD1235E5C880043FB86 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
+		94EFEB50235F893500F491B0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,6 @@
 				9483FCC1235E19C40043FB86 /* View */,
 				9483FCC3235E19F20043FB86 /* Extensions */,
 				9404C5762358EB77000FC40B /* Assets.xcassets */,
-				9404C5782358EB77000FC40B /* LaunchScreen.storyboard */,
 				9404C57B2358EB77000FC40B /* Info.plist */,
 			);
 			path = PimpMyTip;
@@ -98,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				9404C5712358EB76000FC40B /* ViewController.swift */,
+				94EFEB50235F893500F491B0 /* SettingsViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				9404C5732358EB76000FC40B /* Main.storyboard */,
+				9404C5782358EB77000FC40B /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			children = (
 				9483FCCB235E1D3F0043FB86 /* logo.png */,
 				9483FCCD235E1D870043FB86 /* logo_transparent.png */,
+				9483FCD1235E5C880043FB86 /* splash.jpg */,
 				9483FCCF235E1DC80043FB86 /* favicon.png */,
 			);
 			path = Images;
@@ -207,6 +213,7 @@
 				9483FCD0235E1DC80043FB86 /* favicon.png in Resources */,
 				9404C57A2358EB77000FC40B /* LaunchScreen.storyboard in Resources */,
 				9404C5772358EB77000FC40B /* Assets.xcassets in Resources */,
+				9483FCD2235E5C880043FB86 /* splash.jpg in Resources */,
 				9404C5752358EB76000FC40B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +253,7 @@
 				9404C5722358EB76000FC40B /* ViewController.swift in Sources */,
 				9404C56E2358EB76000FC40B /* AppDelegate.swift in Sources */,
 				9483FCC5235E1A200043FB86 /* String-Helper.swift in Sources */,
+				94EFEB51235F893500F491B0 /* SettingsViewController.swift in Sources */,
 				9404C5702358EB76000FC40B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
