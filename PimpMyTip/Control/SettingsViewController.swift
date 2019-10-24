@@ -21,6 +21,9 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var saveTipValuesButton: UIButton!
     
+    @IBOutlet weak var restoreDefaults: UIButton!
+    
+    
     override func viewDidLoad() {
  
         super.viewDidLoad()
@@ -34,29 +37,87 @@ class SettingsViewController: UIViewController {
         
     }
     
-    func setupView(){
+    func setupView() {
         
         guard let minValue = UserDefaults.standard.object(forKey: "minVal") as? Float else {
-               
-               return
+            
+            setupControllsToDefault()
+            
+            disableResetButton()
+
+            return
                
            }
            
            guard let maxValue = UserDefaults.standard.object(forKey: "maxVal") as? Float else {
+            
+            setupControllsToDefault()
+            
+            disableResetButton()
                
-               return
+            return
                
            }
            
-        minPercentageSlider.value = minValue
         
+        setupControllsToNotDefault(withMinVal: minValue, withMaxVal: maxValue)
+
+        
+    }
+    
+    func setupControllsToNotDefault(withMinVal minVal: Float, withMaxVal maxVal: Float){
+        
+        minPercentageSlider.value = minVal
+               
         minPercentageLabel.text = String(format: "%.2f%%", minPercentageSlider.value * 100.0)
 
-        
-        maxPercentageSlider.value = maxValue
-        
+               
+        maxPercentageSlider.value = maxVal
+               
         maxPercentageLabel.text = String(format: "%.2f%%", maxPercentageSlider.value * 100.0)
+        
+    }
+    
+    func setupControllsToDefault(){
+        
+        minPercentageSlider.value = 0.15
+        
+         maxPercentageSlider.value = 0.30
+         
+         minPercentageLabel.text = String(format: "%.2f%%", minPercentageSlider.value * 100.0)
+         
+         maxPercentageLabel.text = String(format: "%.2f%%", maxPercentageSlider.value * 100.0)
+        
+        
+    }
+    
+    func enableResetButton() {
+        
+        restoreDefaults.isEnabled = true
+        
+        restoreDefaults.backgroundColor = UIColor(red: 0.1333, green: 0.4392, blue: 0.5765, alpha: 1.0)
 
+        restoreDefaults.setTitleColor(UIColor(red: 209.0/255.0, green: 204.0/255.0, blue: 192.0/255.0, alpha: 1.0) , for: .disabled)
+        
+    }
+    
+    func disableResetButton() {
+        
+        restoreDefaults.isEnabled = false
+        
+        restoreDefaults.backgroundColor = UIColor(red: 209.0/255.0, green: 204.0/255.0, blue: 192.0/255.0, alpha: 1.0)
+        
+        restoreDefaults.setTitleColor(UIColor(red: 0.1333, green: 0.4392, blue: 0.5765, alpha: 1.0) , for: .disabled)
+        
+    }
+    
+    func showNotification(withTitle title: String,withMessage message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+
+        self.present(alert, animated: true)
         
     }
     
@@ -69,13 +130,9 @@ class SettingsViewController: UIViewController {
         
         defaults.set(maxPercentageSlider.value, forKey: "maxVal")
         
-        let alert = UIAlertController(title: "Success!", message: "Your new max and min values were saved", preferredStyle: .alert)
-
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        //alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-
-        self.present(alert, animated: true)
+        showNotification(withTitle: "Success", withMessage: "Your new Max and Min tip values were saved")
         
+        enableResetButton()
         
     }
     
@@ -100,8 +157,6 @@ class SettingsViewController: UIViewController {
     
     @IBAction func maxTipSliderHandler(_ sender: Any) {
                 
-        
-        
         if maxPercentageSlider.value > minPercentageSlider.value {
             
             maxPercentageLabel.text = String(format: "%.2f%%", maxPercentageSlider.value * 100.0)
@@ -115,6 +170,21 @@ class SettingsViewController: UIViewController {
             return
             
         }
+        
+    }
+    
+    
+    @IBAction func restoreDefaultsTapped(_ sender: UIButton) {
+        
+        UserDefaults.standard.removeObject(forKey: "maxVal")
+        
+        UserDefaults.standard.removeObject(forKey: "minVal")
+        
+        showNotification(withTitle: "Success", withMessage: "Min and Max tip values were restored to default")
+        
+        disableResetButton()
+        
+        setupView()
         
     }
     

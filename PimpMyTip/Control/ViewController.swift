@@ -94,8 +94,6 @@ class ViewController: UIViewController {
         
         let tipString: String = String(format: "$%.2f", tip)
         
-        
-        
         let totalWithTip: String = String(format: "$%.2f",tip + Float(theBillFloat))
         
         tipPercentageLabel.text = String(format: "%.2f%%", serviceSlider.value * 100.0)

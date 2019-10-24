@@ -190,7 +190,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="td2-sV-9PE">
-                                <rect key="frame" x="0.0" y="302" width="414" height="47"/>
+                                <rect key="frame" x="0.0" y="305" width="414" height="47"/>
                                 <color key="backgroundColor" red="0.1333333333" green="0.43921568630000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
                                 <state key="normal" title="Save">
@@ -201,44 +201,44 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oy6-Lz-wcb" userLabel="Settings View">
-                                <rect key="frame" x="0.0" y="49" width="414" height="245"/>
+                                <rect key="frame" x="0.0" y="49" width="414" height="248"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6LU-VZ-590" userLabel="Settings stack ">
-                                        <rect key="frame" x="70.666666666666657" y="35.666666666666671" width="272.66666666666674" height="174"/>
+                                        <rect key="frame" x="36.666666666666657" y="37" width="340.66666666666674" height="174"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wak-jE-1H8" userLabel="Minimum Tip Percentage">
-                                                <rect key="frame" x="0.0" y="0.0" width="272.66666666666669" height="17.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Tip Percentage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wak-jE-1H8" userLabel="Minimum Tip Percentage">
+                                                <rect key="frame" x="0.0" y="0.0" width="340.66666666666669" height="17.333333333333332"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                                 <color key="textColor" red="0.1333333333" green="0.43921568630000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFi-9M-EyQ">
-                                                <rect key="frame" x="0.0" y="25.333333333333329" width="272.66666666666669" height="19.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="25.333333333333329" width="340.66666666666669" height="19.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                 <color key="textColor" red="0.1333333333" green="0.43921568630000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yjy-VG-AlN">
-                                                <rect key="frame" x="-2" y="52.999999999999986" width="276.66666666666669" height="31"/>
+                                                <rect key="frame" x="-2" y="53" width="344.66666666666669" height="31"/>
                                                 <color key="minimumTrackTintColor" red="0.1333333333" green="0.43921568630000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="minTipSliderHandler:" destination="6qt-k3-dgn" eventType="valueChanged" id="bgA-ia-AQx"/>
                                                 </connections>
                                             </slider>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OI-1H-49O">
-                                                <rect key="frame" x="0.0" y="90.999999999999986" width="272.66666666666669" height="17.333333333333329"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum Tip Percentage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OI-1H-49O">
+                                                <rect key="frame" x="0.0" y="91" width="340.66666666666669" height="17.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                                 <color key="textColor" red="0.1333333333" green="0.43921568630000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bha-hW-mVZ">
-                                                <rect key="frame" x="0.0" y="116.33333333333333" width="272.66666666666669" height="19.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="116.33333333333334" width="340.66666666666669" height="19.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                 <color key="textColor" red="0.1333333333" green="0.43921568630000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bcc-XY-rCk">
-                                                <rect key="frame" x="-2" y="144" width="276.66666666666669" height="31"/>
+                                                <rect key="frame" x="-2" y="144" width="344.66666666666669" height="31"/>
                                                 <color key="minimumTrackTintColor" red="0.1333333333" green="0.43921568630000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="maxTipSliderHandler:" destination="6qt-k3-dgn" eventType="valueChanged" id="LYU-qZ-y2C"/>
@@ -253,17 +253,32 @@
                                     <constraint firstItem="6LU-VZ-590" firstAttribute="centerX" secondItem="Oy6-Lz-wcb" secondAttribute="centerX" id="t9X-oa-zj9"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaP-xH-cZI">
+                                <rect key="frame" x="0.0" y="357" width="414" height="47"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.43921568630000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Restore Defaults">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restoreDefaultsTapped:" destination="6qt-k3-dgn" eventType="touchUpInside" id="xNM-2V-xJI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="td2-sV-9PE" firstAttribute="centerX" secondItem="lKg-R9-6iX" secondAttribute="centerX" id="3aA-Ka-Tv4"/>
                             <constraint firstItem="td2-sV-9PE" firstAttribute="top" secondItem="Oy6-Lz-wcb" secondAttribute="bottom" constant="8" id="Ahc-7b-RBK"/>
+                            <constraint firstItem="SaP-xH-cZI" firstAttribute="centerY" secondItem="lKg-R9-6iX" secondAttribute="centerY" constant="12.5" id="GEP-HZ-aUV"/>
                             <constraint firstItem="Oy6-Lz-wcb" firstAttribute="leading" secondItem="0bk-Cn-YfF" secondAttribute="leading" id="KUd-HQ-RFD"/>
                             <constraint firstItem="Oy6-Lz-wcb" firstAttribute="trailing" secondItem="0bk-Cn-YfF" secondAttribute="trailing" id="Q8i-n2-KxN"/>
+                            <constraint firstItem="SaP-xH-cZI" firstAttribute="trailing" secondItem="0bk-Cn-YfF" secondAttribute="trailing" id="ULj-Ig-tIR"/>
+                            <constraint firstItem="SaP-xH-cZI" firstAttribute="top" secondItem="td2-sV-9PE" secondAttribute="bottom" constant="5" id="Uva-PP-ETu"/>
                             <constraint firstItem="Oy6-Lz-wcb" firstAttribute="centerX" secondItem="lKg-R9-6iX" secondAttribute="centerX" id="XqC-xa-ok5"/>
                             <constraint firstItem="td2-sV-9PE" firstAttribute="leading" secondItem="0bk-Cn-YfF" secondAttribute="leading" id="aQ4-AB-kWS"/>
+                            <constraint firstItem="SaP-xH-cZI" firstAttribute="leading" secondItem="0bk-Cn-YfF" secondAttribute="leading" id="hkf-8U-jXx"/>
                             <constraint firstItem="Oy6-Lz-wcb" firstAttribute="top" secondItem="0bk-Cn-YfF" secondAttribute="top" constant="5" id="lrR-qf-JtN"/>
-                            <constraint firstItem="0bk-Cn-YfF" firstAttribute="bottom" secondItem="td2-sV-9PE" secondAttribute="bottom" constant="387" id="pnW-9u-YcX"/>
+                            <constraint firstItem="SaP-xH-cZI" firstAttribute="centerX" secondItem="lKg-R9-6iX" secondAttribute="centerX" id="zH5-Pi-olX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0bk-Cn-YfF"/>
                     </view>
@@ -293,6 +308,7 @@
                         <outlet property="maxPercentageSlider" destination="Bcc-XY-rCk" id="GEo-2Z-e6b"/>
                         <outlet property="minPercentageLabel" destination="CFi-9M-EyQ" id="he3-RJ-UzD"/>
                         <outlet property="minPercentageSlider" destination="Yjy-VG-AlN" id="TWD-8S-w6d"/>
+                        <outlet property="restoreDefaults" destination="SaP-xH-cZI" id="wfV-7J-BLY"/>
                         <outlet property="saveTipValuesButton" destination="td2-sV-9PE" id="Qn4-t6-uLz"/>
                     </connections>
                 </viewController>
